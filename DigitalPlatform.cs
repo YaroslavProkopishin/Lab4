@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab4_Version1
+namespace Lab4_Version2
 {
     public partial class DigitalPlatform : SubjectDigitalSpace
     {

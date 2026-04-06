@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Lab4_Version1
+namespace Lab4_Version2
 {
-    public class SubjectDigitalSpace
+    public abstract class SubjectDigitalSpace
     {
         private string name;
         private bool isActive;
