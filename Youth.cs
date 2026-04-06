@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
 
-namespace Lab4_Version1
+namespace Lab4_Version2
 {
     public class Youth : SubjectDigitalSpace
     {

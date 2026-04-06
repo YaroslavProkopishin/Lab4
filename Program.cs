@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Lab4_Version1
+namespace Lab4_Version2
 {
     internal class Program
     {
@@ -9,6 +9,9 @@ namespace Lab4_Version1
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+
+            // SubjectDigitalSpace obj = new SubjectDigitalSpace();
+            // Так не можна, бо клас abstract
 
             Service service = new Service(".txt", "report.txt", "");
 
