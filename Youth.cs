@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Xml.Linq;
 
-namespace Lab4_Version2
+namespace Lab4_Version3
 {
     public class Youth : SubjectDigitalSpace
     {
@@ -183,6 +182,26 @@ namespace Lab4_Version2
             }
 
             return result;
+        }
+
+        public override string GetInfo()
+        {
+            return base.GetInfo() + ", Тип: Молодь";
+        }
+
+        public override void StartInteraction()
+        {
+            Console.WriteLine("Молодь починає роботу на цифровій платформі.");
+        }
+
+        public override void CheckStatus()
+        {
+            Console.WriteLine("Статус молоді: " + (IsActive ? "профіль активний" : "профіль неактивний"));
+        }
+
+        public override void EndAction()
+        {
+            Console.WriteLine("Молодь завершила поточну дію.");
         }
 
         public override string ToString()
