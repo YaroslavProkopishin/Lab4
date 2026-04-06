@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab4_Version2
+namespace Lab4_Version3
 {
     public partial class DigitalPlatform : SubjectDigitalSpace
     {
@@ -355,6 +355,26 @@ namespace Lab4_Version2
                    "Користувач:\n" + youth.ToString() + "\n" +
                    "Проєкти:\n" + GetProjectsText() +
                    "Рекомендований курс: " + courseName;
+        }
+
+        public override string GetInfo()
+        {
+            return base.GetInfo() + ", Тип: Цифрова платформа";
+        }
+
+        public override void StartInteraction()
+        {
+            Console.WriteLine("Цифрова платформа розпочала взаємодію.");
+        }
+
+        public override void CheckStatus()
+        {
+            Console.WriteLine("Статус платформи: " + (IsActive ? "активна" : "неактивна"));
+        }
+
+        public override void EndAction()
+        {
+            Console.WriteLine("Платформа завершила поточну дію.");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab4_Version2
+namespace Lab4_Version3
 {
     public partial class DigitalPlatform
     {

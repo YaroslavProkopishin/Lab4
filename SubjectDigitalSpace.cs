@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Lab4_Version2
+namespace Lab4_Version3
 {
-    public abstract class SubjectDigitalSpace
+    public class SubjectDigitalSpace : IDigitalEntity
     {
         private string name;
         private bool isActive;
@@ -40,6 +40,21 @@ namespace Lab4_Version2
         public virtual string GetInfo()
         {
             return "Назва: " + name + ", Активність: " + (isActive ? "Так" : "Ні");
+        }
+
+        public virtual void StartInteraction()
+        {
+            Console.WriteLine("Початок взаємодії із суб'єктом цифрового простору.");
+        }
+
+        public virtual void CheckStatus()
+        {
+            Console.WriteLine("Статус активності: " + (isActive ? "активний" : "неактивний"));
+        }
+
+        public virtual void EndAction()
+        {
+            Console.WriteLine("Взаємодію завершено.");
         }
     }
 }
